@@ -4,6 +4,7 @@ import ProductTable from "./component/ProductTable";
 import Search from "./component/Search";
 import getProducts from "./service";
 import Pagination from "./component/Pagination";
+import Printpage from "./component/Printpage";
 
 function App() {
   const pagesize = ["4", "5", "6", "10"];
@@ -58,15 +59,7 @@ function App() {
           })}
         </select>
       </div>
-
-      {/*       
-      <label for="items">Items Per Page</label>
-      <select name="items" value={pageSelect} onChange={handlechangePage}>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="10">10</option>
-      </select> */}
+      <Printpage/>
     </div>
   );
 }
