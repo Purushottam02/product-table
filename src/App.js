@@ -27,7 +27,9 @@ function App() {
   };
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
-
+  const getOpenApplication=(index)=>{
+    console.log(index);
+  }
   useEffect(() => {
     init();
   }, []);
@@ -45,11 +47,15 @@ function App() {
         }}
       />
 
-      <ProductTable data={tableData} />
+      <ProductTable data={tableData}
+        text="this is unique key"
+        application={getOpenApplication}
+      />
       <Pagination
         postsPerPage={pageSelect}
         totalPosts={data.length}
         paginate={paginate}
+        
       />
 
       <div className="pageselector">

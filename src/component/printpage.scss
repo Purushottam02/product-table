@@ -3,13 +3,13 @@
     background-color: #060808;
     border: solid 10px blue;
     .print {
-      background-color: aqua;
+      background-color: rgb(192, 242, 242);
     }
   }
 
 }
 @media  (min-width:480px){
     body{
-        background-color: aqua;
+        background-color: rgb(185, 237, 237);
     }
 }
